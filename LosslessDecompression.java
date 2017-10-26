@@ -7,6 +7,7 @@ public class LosslessDecompression
    public static void main(String[] args)   //Decompressed using RLE: Run-Length-Encoding
    {
       try{
+         assert (args.length == 1);
          File file = new File(args[0]);
          BufferedReader reader = new BufferedReader(new FileReader(file));
          String line = null;
